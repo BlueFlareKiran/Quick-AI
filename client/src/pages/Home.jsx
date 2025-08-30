@@ -1,9 +1,16 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import AiTools from '../components/AiTools'
+import Testimonial from '../components/Testimonial'
 
 export default function Home() {
   return (
-    <div>
-      <h1>home</h1>
-    </div>
+   <>
+   <Navbar />
+   <Hero />
+   <AiTools />
+   <Testimonial />
+   </>
   )
 }
