@@ -31,17 +31,18 @@ const Sidebar = ({ sidebar, setSidebar }) => {
   return (
     <div
       className={`w-60 bg-white border-r border-gray-200 flex flex-col justify-between items-center 
-  fixed top-14 bottom-0 left-0 z-50 
-  transform transition-transform duration-300 ease-in-out
-  ${sidebar ? "translate-x-0" : "-translate-x-full"} 
-  sm:static sm:translate-x-0`}
+        fixed top-14 bottom-0 left-0 z-50 
+        transform transition-transform duration-300 ease-in-out
+        ${sidebar ? "translate-x-0" : "-translate-x-full"} 
+        sm:static sm:translate-x-0`}
     >
       <div className="my-7 w-full">
         <img
-          src={user.imageUrl}
-          alt="img"
-          className="w-13 rounded-full mx-auto"
-        />
+  src={user.imageUrl}
+  alt="img"
+  className="w-20 h-20 rounded-full object-cover mx-auto"
+/>
+
         <h1 className="mt-1 text-center">{user.fullName}</h1>
         <div className="px-6 mt-5 text-sm text-gray-600 font-medium">
           {navItems.map(({ to, label, Icon }) => (
@@ -78,7 +79,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
           onClick={openUserProfile}
           className="flex gap-2 items-center cursor-pointer"
         >
-          <img src={user.imageUrl} alt="img" className="w-8 rounded-full" />
+          <img src={user.imageUrl} alt="img" className="w-9 h-9 rounded-full" />
           <div>
             <h1 className="text-sm font-medium">{user.fullName}</h1>
             <p className="text-xs text-gray-500">
