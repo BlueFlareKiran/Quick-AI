@@ -12,7 +12,10 @@ const CreationItem = ({item}) => {
                 <h2>{item.prompt}</h2>
                 <p className='text-gray-500'>{item.type} - {new Date(item.created_at).toLocaleDateString()}</p>
             </div>
-            <button className='bg-[#eff6ff] border border-[#bfdbfe] text-[#1e40af] px-4 py-1 rounded-full'>{item.type}</button>
+           <button className='bg-[#eff6ff] border border-[#bfdbfe] text-[#1e40af] px-4 py-1 rounded-full whitespace-nowrap'>
+  {item.type}
+</button>
+
         </div>
       {
         expanded && (

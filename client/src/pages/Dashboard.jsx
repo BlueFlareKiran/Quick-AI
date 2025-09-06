@@ -20,7 +20,7 @@ export default function Dashboard() {
     <div  className='h-full overflow-y-scroll p-6'>
       <div className='flex justify-start gap-4 flex-wrap'>
         {/* Total creation card */}
-        <div className='flex justify-between items-center w-92 p-4 px-6 bg-white rounded-xl border border-gray-200'>
+        <div className='flex justify-between items-center w-80 p-4 px-6 bg-white rounded-xl border border-gray-200'>
           <div className='text-slate-600'>
             <p className='text-sm'>
               Total Creations
@@ -34,7 +34,7 @@ export default function Dashboard() {
 
 
         {/* Active Plan Card */}
-        <div className='flex justify-between items-center w-92 p-4 px-6 bg-white rounded-xl border border-gray-200'>
+        <div className='flex justify-between items-center w-80 p-4 px-6 bg-white rounded-xl border border-gray-200'>
           <div className='text-slate-600'>
             <p className='text-sm'>
               Active Plan
